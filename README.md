@@ -16,9 +16,9 @@ Run `npm install` to download all the packages needed to run the project
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Running the project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Use `ng serve` to start the project
 
 ## Running end-to-end tests
 
