@@ -1,0 +1,11 @@
+<section>
+  <h2> Stage bij Dialog </h2>
+  <ul id="listItems">
+    <li *ngFor="let item of list" (click)="removeItem(item)"> {{item}} </li>
+    <li (click)="showInput()">
+      <input *ngIf="showMe" (keyup.enter)="addItem()" type="text" name="item" id="item" [(ngModel)]="textValue" autofocus placeholder="en nog een biertje...">
+      <span *ngIf="!showMe">Voeg nog een item toe</span>
+    </li>
+  </ul>
+  <button (click)="popup()"> Klik om stage te lopen </button>
+</section>

@@ -1,0 +1,108 @@
+* {
+  font-family: sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  border: 1px solid #D7E6F2;
+  border-radius: .4em;
+  margin: auto;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(157deg, rgba(255, 255, 255, 1) 30%, rgba(234, 245, 251, 1) 97%);
+}
+
+section h2 {
+  font-size: 3em;
+  margin: .8em 0 0 0;
+  color: #01B6E1;
+}
+
+section ul {
+  padding: 0;
+  border: 1px solid #D7E6F2;
+  border-radius: .5em;
+  margin-bottom: 0;
+  background: white;
+  position: relative;
+  min-width: 20em;
+}
+
+section li {
+  list-style-type: none;
+  margin: 0;
+  padding: .5em 2em;
+  border-bottom: 1px solid #D7E6F2;
+}
+
+section li:hover {
+  background-color: rgb(247, 247, 247);
+  cursor: pointer;
+}
+
+/* Checkmark and plus icon */
+section li:last-of-type {
+  border-bottom: 0;
+  opacity: .5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+section li::before {
+  content: '✔';
+  margin-left: -10px;
+  padding-right: 10px;
+}
+
+section li:last-of-type::before {
+  content: '+';
+  font-size: 1.3em;
+  font-family: system-ui;
+  margin-left: -10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: .2em;
+}
+
+/* Trash can icon */
+section li:hover::after {
+  content: '🗑️';
+  position: absolute;
+  margin-right: .5em;
+  right: 0;
+}
+
+section li:hover:last-of-type::after {
+  content: '';
+}
+
+section input {
+  height: 2em;
+  width: 90%;
+}
+
+section button {
+  background-color: #01B6E1;
+  border: none;
+  color: white;
+  margin: 1.5em;
+  border-radius: 0.2em;
+  font-size: 22px;
+  padding: 0.5em;
+  transition: all .05s ease-in-out;
+  font-weight: bolder;
+}
+
+section button:hover {
+  background-color: #0093b8;
+}
+
+section button:active {
+  transform: scale(.95);
+}
